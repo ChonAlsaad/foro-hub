@@ -1,0 +1,27 @@
+# Base de datos
+spring.datasource.url=jdbc:postgresql://localhost:5432/forohub
+spring.datasource.username=tu_usuario
+spring.datasource.password=tu_password
+
+# JPA
+spring.jpa.hibernate.ddl-auto=validate
+spring.jpa.show-sql=false
+spring.jpa.open-in-view=false
+
+# Flyway
+spring.flyway.enabled=true
+spring.flyway.locations=classpath:db/migration
+
+spring.main.web-application-type=servlet
+
+# JWT — generar con: openssl rand -hex 32
+api.jwt.secret=TU_SECRET_HEX_DE_64_CHARS
+api.jwt.expiration=86400000
+
+# Swagger
+springdoc.api-docs.path=/v3/api-docs
+springdoc.swagger-ui.path=/swagger-ui.html
+springdoc.swagger-ui.url=/v3/api-docs
+
+# Logging
+logging.level.org.springframework.security=WARN
