@@ -85,6 +85,15 @@ La API estará disponible en `http://localhost:8080`
 Swagger UI disponible en:
 http://localhost:8080/swagger-ui/index.html
 
+## 🔄 Flujo de uso con Swagger
+
+1. Acceder a `http://localhost:8080/swagger-ui/index.html`
+2. Ejecutar `POST /api/auth/login` con las credenciales del usuario por defecto
+3. Copiar el valor del campo `token` de la respuesta
+4. Hacer click en el botón **Authorize** 🔒 (esquina superior derecha)
+5. Pegar el token en el campo **Value** y confirmar
+6. Todos los endpoints protegidos quedarán habilitados para probar
+
 ## 🔑 Autenticación
 
 Todas las rutas excepto `/api/auth/login` y `/api/users` requieren token JWT.
